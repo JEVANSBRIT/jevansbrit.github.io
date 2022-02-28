@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1 {
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main {
+    width: 70%;
+    border: 2px solid rgb(54, 219, 248);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+}
+figure {
+    width: 100%;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.info {
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: .5rem;
+    padding: 1em;
+    background-color: aquamarine;
+}
+img {
+    width: 100%;
+}
+p {
+    margin-top: 1em;
+}
+@media only screen and (max-width: 600px) {
+main { 
+    width: 100%;
+    Padding: 0;
+    border: none;
+}
+.info {
+    font-size: 0.8em;
+}
+
+}
