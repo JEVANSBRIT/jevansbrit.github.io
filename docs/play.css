@@ -29,12 +29,14 @@ section {
 /* If you ahe created any new styles in InDesign and used export tags then you need to add them here */
 
 section.dramatis {
+  border: 1px solid green;
   background-color: silver;
   width: 70%;
   margin: 12px auto;
 }
 section.play {
-  width: 70%;
+  border: 1px solid red;
+  width: 65%;
   margin: 12px auto;
 }
 figure {
