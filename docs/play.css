@@ -25,6 +25,21 @@ section.nav {
 section {
   border: 0;
 }
+.backtotop {
+position: fixed;
+bottom: 2px;
+right: 8px;
+opacity: 0.9;
+}
+.backtotop a {
+  text-decoration: none;
+  font-size: 3em;
+  color: rgb(5, 100, 2);
+}
+.backtotop a:hover {
+  color: black;
+}
+
 
 /*Here follows the class names that you will have in your html*/
 /*You may have more if you added styles in InDesign*/
@@ -197,6 +212,10 @@ nav ul li ul li {
 flex: 0 1 auto;
 width: 8rem; /*the same value as the flex-basis for parent li*/
 }
+audio {
+  width: 100%;
+  margin: 1em 0;
+}
 
 @media screen and (max-width: 700px) {
 nav ul {
@@ -222,10 +241,7 @@ nav ul li {
 flex: 0 0 auto; /*the same as flex-grow, flex-shrink, flex-basis */
 width: 100%;
 }
-audio {
-  width: 100%;
-  margin: 1em 0;
 
-}
+
 
 }
