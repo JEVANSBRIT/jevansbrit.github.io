@@ -5,11 +5,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
 
 body {
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   /*your style rules go in here */
   font-family: 'Merriweather', serif;
+  background-color: bisque;
 }
 
 section.nav {
@@ -30,36 +36,62 @@ section {
 
 section.dramatis {
   border: 1px solid green;
-  background-color: silver;
-  width: 70%;
-  margin: 12px auto;
+
+  width: 65%;
+  margin: 4em auto;
 }
 section.play {
   border: 1px solid red;
   width: 65%;
-  margin: 12px auto;
+  margin: 3em auto;
+}
+.dramatis, .play {
+  background-color: white;
+  width: 65%;
+  margin: 3em auto;
+  padding: 1em;
+}
+section.head {
+  border: 1px solid blue;
+  width: 65%;
+  margin: 3em auto;
 }
 figure {
+  width: 90% auto;
+  margin: 1em auto;
 }
 
 img {
-  max-width: 40%;
+  max-width: 100%;
   padding: 20px auto;
 }
 h1.act {
+  background-color: cornflowerblue;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 2em;
 }
 p.character {
 }
 p.charactername {
+  
 }
 h1.dramatishead {
 }
+.firstscene, .scene {
+  margin-top: .5em;
+  text-align: center;
+  font-size: 1.8em;
+  padding: 8px;
+  background-color: coral;
+}
 
 h2.location {
+  text-align: center;
+  padding: 8px;
 }
 p.play_location {
-}
-p.prose {
 }
 
 h2.firstscene {
@@ -70,6 +102,10 @@ h2.scene {
 p.song {
 }
 h2.stagedirection {
+  margin: 1em 0;
+}
+.Speech-after-character {
+  margin: 0 0 0.4em 8em;
 }
 .verseline {
   margin: 0 0 0.4em 8em;
@@ -77,18 +113,119 @@ h2.stagedirection {
 
 p.prose {
   margin: 0 0 0.4em 8em;
+  text-align: center;
 }
 
 span.character_role {
+  color: green;
 }
 span.stage_directions_inline {
 }
 
-.character_beforespeech {
+span.Character-before-speech {
+
+  color: blueviolet;
   display: block;
   position: relative;
-  left: -8em;
+  left: -7em;
   top: 1em;
+  font-size: 1.1em;
   /* font-size: 1.1em; */
   width: 4em;
+  padding-left: 4px;
+}
+
+nav    {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(238, 130, 238, 0.829);
+  font-size: 0.8em;
+  z-index: 100;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+  }
+  nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav ul li {
+flex: 0 0 10.5rem; /*the same as flex-grow. flex-shrink, flex-basis*/
+text-align: center;
+}
+li.Homepage {
+  margin-right: auto;
+}
+
+nav ul li a {
+text-decoration: none;
+padding: 0.8rem 1rem;
+display: block;
+}
+
+nav ul li:hover {
+background-color: rgb(8, 119, 126);
+}
+
+nav ul li a:hover {
+color: white;
+}
+
+li ul {
+display: none;
+position: absolute;
+background-color: rgb(8, 119, 126);
+}
+
+nav ul li:hover ul {
+display: flex;
+flex-direction: column;
+}
+
+nav ul li ul li {
+flex: 0 1 auto;
+width: 8rem; /*the same value as the flex-basis for parent li*/
+}
+
+@media screen and (max-width: 700px) {
+nav ul {
+  display: none;
+  flex-direction: column;
+}
+#toggle:checked ~ #menu{
+  display: block !important;
+}
+
+.hamburger {
+  display: block;
+  float: right;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked ~ ul {
+display: block;
+}
+li ul {
+position: static;
+}
+nav ul li {
+flex: 0 0 auto; /*the same as flex-grow, flex-shrink, flex-basis */
+width: 100%;
+}
+audio {
+  width: 100%;
+  margin: 1em 0;
+
+}
+
 }

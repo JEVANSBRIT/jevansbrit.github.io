@@ -7,12 +7,18 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 		<link href="/docs/play.css" rel="stylesheet" type="text/css" />
+		<script>
+			function hidemenu() {
+				document.getElementById("toggle").checked = false;
+			}
+		</script>
 	</head>
 	<body id="playforweb" lang="en-GB">
 		<nav id="_idContainer000" class="toc">
-			<img src="/docs/hamletcover3.0.jpg" alt="Hamlet Front Cover">
-			<p class="Basic-Paragraph">Contents</p>
-			<ul>
+			<input type="checkbox" id="toggle"/>
+			<label for="toggle" class="hamburger">&#9776;</label>
+			<ul id="menu" onclick="hidemenu()">
+				<li class="Homepage"><a href="/docs/index.html">Homepage </a></li>
 				<li class="TOC-Heading-1"><a href="playforweb.html#_idTextAnchor000">Dramatis Personae </a></li>
 				<li class="TOC-Heading-1"><a href="playforweb.html#_idTextAnchor001">ACT I</a><ul><li class="TOC-Heading-2"><a href="playforweb.html#_idTextAnchor002"><span class="All-scenes">Scene I </span></a></li><li class="TOC-Heading-2"><a href="playforweb.html#_idTextAnchor003"><span class="All-scenes">Scene II </span></a></li><li class="TOC-Heading-2"><a href="playforweb.html#_idTextAnchor004"><span class="All-scenes">Scene III </span></a></li><li class="TOC-Heading-2"><a href="playforweb.html#_idTextAnchor005"><span class="All-scenes">Scene IV </span></a></li><li class="TOC-Heading-2"><a href="playforweb.html#_idTextAnchor006"><span class="All-scenes">Scene V </span></a></li></ul></li>
 				<li class="TOC-Heading-1"><a href="playforweb.html#_idTextAnchor007">ACT II</a><ul><li class="TOC-Heading-2"><a href="playforweb.html#_idTextAnchor008"><span class="All-scenes">Scene I </span></a></li><li class="TOC-Heading-2"><a href="playforweb.html#_idTextAnchor009"><span class="All-scenes">Scene II </span></a></li></ul></li>
@@ -48,16 +54,21 @@
 			<p class="charactername">A Norwegian Captain  </p>
 			<p class="charactername">English Ambassadors  </p>
 		</section>
-		<section id="_idContainer002" class="play">
-			<figure id="_idContainer003" class="actimage">
-			<img src="/docs/Birthplace_Stratford-upon-Avon.jpg"
-			alt="Shakespeare's first folio title page">
+		<section id="_idContainer009" class="head">
+			<figure id="_idContainer008" class="headimage"></figure>
+			<img src="/docs/hamletcover3.0.jpg" alt="Hamlet Front Cover">
 			</figure>
+			</section>
+		<section id="_idContainer002" class="play">
 			<h1 class="act"><a id="_idTextAnchor001"></a>ACT I</h1>
 			<h2 class="firstscene"><span class="All-scenes"><a id="_idTextAnchor002"></a>Scene I </span></h2>
 			<h2 class="location">Elsinore. A platform before the Castle. </h2>
+			<figure id="_idContainer003" class="actimage">
+				<img src="/docs/Birthplace_Stratford-upon-Avon.jpg"
+				alt="Shakespeare's first folio title page">
+				</figure>
 			<h2 class="stagedirection balance-text">Enter two Sentinels-[first,] Francisco, [who paces up and down at his post; then] Bernardo, [who approaches him]. </h2>
-			<p class="Speech-after-character"><span class="Character-before-speech">Bernardo</span> <span class="Character-before-speech">&#9;</span>Who’s there.? </p>
+			<p class="Speech-after-character"><span class="Character-before-speech">Bernardo</span> <span class="Speech-after-character">&#9;</span>Who’s there.? </p>
 			<p class="Speech-after-character"><span class="Character-before-speech">Francisco</span> <span class="Character-before-speech">&#9;</span>Nay, answer me. Stand and unfold yourself. </p>
 			<p class="Speech-after-character"><span class="Character-before-speech">Bernardo</span> <span class="Character-before-speech">&#9;</span>Long live the King! </p>
 			<p class="Speech-after-character"><span class="Character-before-speech">Francisco</span> <span class="Character-before-speech">&#9;</span>Bernardo? </p>

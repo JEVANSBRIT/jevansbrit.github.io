@@ -98,11 +98,12 @@ figure {border: solid cornflowerblue;
   margin: 20px auto 10px auto;
 }
 header {
-  margin-top: 3em;
+
 }
 
 h1, h2 { font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
+  margin: 0.5em;
 }
 
 p {
@@ -125,11 +126,14 @@ img {
   margin-right: auto;
 }
 nav    {
+  display: block;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: grey;
+  background-color: rgba(238, 130, 238, 0.829);
+  font-size: 0.8em;
+  z-index: 100;
   }
   input[type="checkbox"] {
     display: none;
@@ -147,9 +151,12 @@ nav    {
 }
 
 nav ul li {
-flex: 0 0 8rem; /*the same as flex-grow. flex-shrink, flex-basis*/
-text-align: center;
-}
+  flex: 0 0 10.5rem; /*the same as flex-grow. flex-shrink, flex-basis*/
+  text-align: center;
+  }
+  li.Homepage {
+    margin-right: auto;
+  }
 
 nav ul li a {
 text-decoration: none;
@@ -180,12 +187,28 @@ nav ul li ul li {
 flex: 0 1 auto;
 width: 8rem; /*the same value as the flex-basis for parent li*/
 }
-
+.playlink {
+  margin-top: 1em;
+  text-align: center;
+  padding: 0.2em;
+  font-size: 2em;
+}
+.playlink:hover {
+  background-color: aqua;
+}
+.playlink a {
+  text-decoration: none;
+ 
+}
 @media screen and (max-width: 700px) {
 nav ul {
   display: none;
   flex-direction: column;
 }
+#toggle:checked ~ #menu{
+  display: block !important;
+}
+
 .hamburger {
   display: block;
   float: right;
@@ -201,5 +224,6 @@ nav ul li {
 flex: 0 0 auto; /*the same as flex-grow, flex-shrink, flex-basis */
 width: 100%;
 }
+
 
 }
