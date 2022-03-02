@@ -166,7 +166,7 @@ nav    {
   .hamburger {
     display: none;
     font-size: 2rem;
-    color: white;
+    color: black;
   }
   nav ul {
   list-style: none;
