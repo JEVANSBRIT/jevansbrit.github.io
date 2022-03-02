@@ -125,10 +125,17 @@ h2.stagedirection {
 .verseline {
   margin: 0 0 0.4em 8em;
 }
+.stagedirection {
+  font-size: 1.3em;
+  text-align: right;
+  color: grey;
+  line-height: 140%;
 
+}
 p.prose {
   margin: 0 0 0.4em 8em;
-  text-align: center;
+  
+
 }
 
 span.character_role {
